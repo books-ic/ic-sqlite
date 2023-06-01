@@ -10,5 +10,5 @@ repository = "https://github.com/froghub-io/ic-sqlite.git"
 [dependencies]
 ic-cdk = "0.6.8"
 lazy_static = "1.2"
-sqlite-vfs = { package = "sqlite-vfs-ic", version = "0.2" }
-rusqlite = { package = "rusqlite-ic", version = "0.28", features = ["bundled", "serde_json"]}
+sqlite-vfs = {package = "sqlite-vfs", version = "0.2"}
+rusqlite = { path="../rusqlite", package="rusqlite-ic", features = ["bundled", "serde_json"]}
