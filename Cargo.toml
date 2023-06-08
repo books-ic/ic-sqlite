@@ -8,8 +8,9 @@ authors = ["Froghub <f@froghub.io>"]
 repository = "https://github.com/froghub-io/ic-sqlite.git"
 
 [dependencies]
-ic-cdk = "0.6.8"
+ic-cdk = {workspace = true}
 lazy_static = "1.2"
-sqlite-vfs = { path = "../sqlite-vfs"}
+sqlite-vfs = { workspace = true }
 # sqlite-vfs = {package = "sqlite-vfs", version = "0.2"}
-rusqlite = { path="../rusqlite", package="rusqlite-ic", features = ["bundled", "serde_json"]}
+# rusqlite = { path="../rusqlite", package="rusqlite-ic", features = ["bundled", "serde_json"]}
+rusqlite = {workspace=true}
